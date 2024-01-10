@@ -51,20 +51,14 @@ const routerSwitch = () => {
       break;
 
     // Listing UI settings
-    case 'listing':
+    case 'listings':
       document.querySelector('title').innerText = defaultTitle + ` || Listings`;
       renderListings();
       break;
 
-    // Listings UI settings
-    case 'listings':
-      document.querySelector('title').innerText = defaultTitle + ` || Job Listings`;
-      showListings();
-      break;
-
     // TBD Listings UI settings
     case 'listingsPage':
-      document.querySelector('title').innerText = defaultTitle + ` || Job Listings`;
+      document.querySelector('title').innerText = defaultTitle + ` || Job Listings TBD`;
       showListings();
       break;
 
