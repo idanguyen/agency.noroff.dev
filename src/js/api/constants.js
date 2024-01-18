@@ -12,10 +12,10 @@ export const apiPath = apiUrl.toString();
 export const dummyApiRegisterUser = 'users/add'; // It will simulate a POST request and will return the new created user with a new id
 export const dummyApiLogin = 'auth/login'; // user Login
 export const dummyApiGetAll = 'posts'; // GET all posts
-export const dummyApiGetSingel = 'posts/1'; //GET a singel post
+export const dummyApiGetSingle = 'posts/1'; //GET a single post
 export const dummyApiSearch = 'posts/search?q=love'; // Search for a word in post
 export const dummyApiCreatePost = 'posts/add'; //create a post
-export const dummyAPiUpddatePost = 'posts/1'; //Update a post
+export const dummyAPiUpdatePost = 'posts/1'; //Update a post
 export const dummyApiDeletePost = 'posts/1'; //Delete a post
 export const dummyApiGetPostByID = 'posts/user/'; //This needs a id of a user from query
 export const dummyApiCreateProduct = 'products/add'; //create a product

@@ -6,7 +6,7 @@ import { Store } from '../../storage/storage.js';
 
 /**
  * Removes token, profile and role from local storage or session storage.
- * It levaes the email in the local storage for prefilling of the login form.
+ * It leaves the email in the local storage for prefilling of the login form.
  * @return {void}
  */
 

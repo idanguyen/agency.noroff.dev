@@ -6,12 +6,12 @@ import { displayMessage } from '../../ui/message/displayMessage.js';
 export function setRegisterFormListenerApplicant() {
   const form = document.querySelector('#registerForm-applicant');
   const password = document.querySelector('#passwordStudent');
-  const repeatPasssword = document.querySelector('#repPasswordStud');
+  const repeatPassword = document.querySelector('#repPasswordStud');
 
   if (form) {
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
-      if (password.value !== repeatPasssword.value) {
+      if (password.value !== repeatPassword.value) {
         displayMessage('warning', "Passwords don't match!", '#confirm-message');
         return;
       } else {
@@ -30,7 +30,7 @@ export function setRegisterFormListenerApplicant() {
           return displayMessage('danger', error, '#confirm-message');
         }
         //show success message if there is no error
-        displayMessage('success', `Registration successfull! You can now <a href="/pages/auth/login/index.html">login</a>.`, '#confirm-message');
+        displayMessage('success', `Registration successful! You can now <a href="/pages/auth/login/index.html">login</a>.`, '#confirm-message');
       }
     });
   }

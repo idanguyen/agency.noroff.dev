@@ -48,7 +48,7 @@ https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png
  * @type {string}
  * @description The HTML template displayed to a logged in organization.
  */
-export const organisationView = `
+export const organizationView = `
 
 <div class="col">
 <div class="shadow-sm d-flex p-3">

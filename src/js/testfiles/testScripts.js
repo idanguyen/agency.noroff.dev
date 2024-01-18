@@ -1,4 +1,4 @@
-import { organisationView, studentView } from './constants.js';
+import { organizationView, studentView } from './constants.js';
 
 /**
  * @fileoverview This file displays different views to the user based on their login status.
@@ -9,18 +9,18 @@ import { organisationView, studentView } from './constants.js';
 
 //For testing purposes. True=Logged in.
 const studentIsLoggedIn = false;
-const organisationIsLoggedIn = true;
+const organizationIsLoggedIn = true;
 const section2Container = document.querySelector('.section2');
 
 /**
  * @function
  * @description Creates the HTML for the organization view and sets it as the innerHTML of the section2Container element.
  */
-export function createOrganisationViewHtml() {
-  if (organisationIsLoggedIn) {
+export function createOrganizationViewHtml() {
+  if (organizationIsLoggedIn) {
     let html = '';
     for (let i = 0; i < 4; i++) {
-      html += organisationView;
+      html += organizationView;
     }
     section2Container.innerHTML = `
     <div class="bg-theme-light p-lg-5 container-lg section2Company">
