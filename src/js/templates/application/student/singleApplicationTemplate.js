@@ -1,5 +1,5 @@
 import { authBaseFetchOpen } from '../../../api/apiBaseFetch.js';
-import { apiPath, dummyApiGetSingel } from '../../../api/constants.js';
+import { apiPath, dummyApiGetSingle } from '../../../api/constants.js';
 
 /**
  * Creates the HTML for a single application
@@ -7,7 +7,7 @@ import { apiPath, dummyApiGetSingel } from '../../../api/constants.js';
  * @returns - The HTML for a single application
  */
 export async function singleApplicationTemplate() {
-  const url = apiPath + dummyApiGetSingel;
+  const url = apiPath + dummyApiGetSingle;
   const options = {
     method: 'GET',
     headers: {

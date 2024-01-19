@@ -6,7 +6,7 @@ import { apiPath } from '../../api/constants.js';
 // Import API url for fetch the data (userDetailsTemplate)
 import { userDetailsTemplate } from '../../templates/profile/userDetailsTemplate.js';
 
-export async function showUserDatails() {
+export async function showUserDetails() {
   const userUrl = apiPath + `users/` + JSON.parse(localStorage.getItem('id'));
 
   const reqOption = {

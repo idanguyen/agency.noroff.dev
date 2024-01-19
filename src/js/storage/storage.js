@@ -1,7 +1,7 @@
 /**
  * Class to store items in localstorage.
  * This code I got from Oliver
- * Joakim Tveter changed the third parameter nameing for clarity
+ * Joakim Tveter changed the third parameter naming for clarity
  */
 export class Store {
   constructor(key, state, session = false) {
@@ -22,8 +22,8 @@ export class Store {
   set state(state) {
     if (state) {
       this.storage.setItem(this.key, JSON.stringify(state));
-     }
-   }
+    }
+  }
 
   clear() {
     this.storage.removeItem(this.key);

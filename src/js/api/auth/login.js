@@ -65,8 +65,8 @@ export async function login(profile) {
         new Store('role', role, Boolean(remember !== 'on'));
         new Store('email', email, false);
         new Store('id', id, Boolean(remember !== 'on'));
-        // add  chck for id :
-        if (id === id) { // spiderman.gif
+        // add  check for id :
+        if (id === id) {
           window.location.replace('/pages/user/index');
         } else if (profile.admin) {
           window.location.replace('#'); // TODO: Add admin page url

@@ -1,5 +1,5 @@
 /**
- *  Retrives the token from the local storage or session storage
+ *  Retrieves the token from the local storage or session storage
  * @return {string|null} The API auth token
  */
 export function getToken() {

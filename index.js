@@ -44,7 +44,7 @@ const routerSwitch = () => {
       adminRouter();
       break;
 
-    // Single listing page UI (PAGE DOESNT EXIST YET)
+    // Single listing page UI (PAGE DOES NOT EXIST YET)
     case 'singleListing':
       document.querySelector('title').innerText = defaultTitle + ` || Listing`;
       viewSingleListing();
@@ -138,7 +138,7 @@ const routerSwitch = () => {
       document.querySelector('title').innerText = defaultTitle + ` || Privacy Policy`;
       break;
 
-    // 404 UI settings (PAGE DOESNT EXIST YET)
+    // 404 UI settings (PAGE DOES NOT EXIST YET)
     case '404':
       document.querySelector('title').innerText = defaultTitle + ` || ` + '404';
       break;
