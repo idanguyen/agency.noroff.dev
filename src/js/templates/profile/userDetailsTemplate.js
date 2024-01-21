@@ -1,4 +1,5 @@
 import { Store } from '../../storage/storage.js';
+import { stringCompare } from '../../utilities/index.js';
 
 // Author Truls Haakenstad @Menubrea
 // Dev Team: Frontend - User
@@ -172,4 +173,20 @@ export function roleCompany() {
   if (roleState === 'Company') {
     return true;
   }
+}
+
+/**
+ * Function to check if user role is a client or Applicant
+ * @returns role  if applicamt or client. Else returns null
+ */
+
+export function clarifyUserRole() {
+  const profileRole = document.querySelector('#profileRole');
+  if (stringCompare('Client', profileRole) === 0) {
+    return profileRole;
+  }
+  if (stringCompare('Applicant', profileRole) === 0) {
+    return profileRole;
+  }
+  return null;
 }
